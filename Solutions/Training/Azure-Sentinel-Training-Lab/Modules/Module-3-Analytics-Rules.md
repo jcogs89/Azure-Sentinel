@@ -29,7 +29,7 @@ This module assumes that you have completed [Module 1](Module-1-Setting-up-the-e
 ### Exercise 2: Enable Microsoft incident creation rule
 
 Microsoft Sentinel is a cloud-native SIEM and as such, it acts as single pane of glass for alerts and event correlation. 
-For this purpose, and to be able to ingest and surafce alerts from Microsoft Security Products, we create a **Microsoft incident creation rule**.
+For this purpose, and to be able to ingest and surface alerts from Microsoft Security Products, we create a **Microsoft incident creation rule**.
 In this exercise, we will review this feature and create one example rule with a filtering option to help the analyst deal with alert fatigue.
 
 1. In Microsoft Sentinel main page press on the **Analytics** section.
@@ -38,13 +38,13 @@ In this exercise, we will review this feature and create one example rule with a
 ![Select Microsoft incident creation rule](../Images/m3-microsoft-creation-rule.gif?raw=true)
 
 3. In the rule name enter **"Azure Defender only medium and high Alerts"** 
-4. In the **Microsoft security service** dropdown select **Azure Defender**
+4. In the **Microsoft security service** dropdown select **Microsoft Defender for Cloud**
 5. In the **Filter by severity** select **custom** and mark **High** and **Medium**
 
 ![Azure Defender Filter by severity](../Images/m3-microsoft-creation-rule02.gif?raw=true)
 
 6. Press **Next: Automated response**
-7. In the above **"Automated response"** page you can attach automation rule that can generate automation tasks that can assist your SOC with repetitive tasks, or Security remediation. More in this topic in the SOAR module. 
+7. In the above **"Automated response"** page you can attach an automation rule that can generate automation tasks that can assist your SOC with repetitive tasks, or Security remediation. More in this topic in the SOAR module. 
 8. Press **Next: Review** and **create** in the next page.
 
 ![review the azure defender rule](../Images/m3-microsoft-creation-rule03.gif?raw=true)
